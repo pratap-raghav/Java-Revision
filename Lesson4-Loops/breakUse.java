@@ -12,5 +12,6 @@ public class breakUse {
             }
             System.out.println("Entered Number: "+num);
         }
+        sc.close();
     }
 }
