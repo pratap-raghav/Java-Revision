@@ -21,7 +21,8 @@ public class binoCoeff {
         int r = sc.nextInt();
 
         System.out.println("nCr : " + n + "C" + r + " = " + (fact(n)/(fact(r)*fact(n-r))));
-
+        
         sc.close();
     }
 }
+
