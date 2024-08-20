@@ -47,9 +47,9 @@ public class funcOverload {
         float g = sc.nextInt();
         System.out.print("float h = ");
         float h = sc.nextInt();
-        System.out.println("a + b = " + add(e, f));
-        System.out.println("a + b + c = " + add(e, f, g));
-        System.out.println("a + b + c + d = " + add(e, f, g, f));
+        System.out.println("e + f = " + add(e, f));
+        System.out.println("e + f + g = " + add(e, f, g));
+        System.out.println("e + f + g + h = " + add(e, f, g, h));
 
         sc.close();
     }
