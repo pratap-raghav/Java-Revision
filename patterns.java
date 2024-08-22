@@ -89,6 +89,26 @@ public class patterns {
         }
     }
     
+
+    static void butterfly(Scanner sc){
+        System.out.print("Enter number of column: ");
+        int col = sc.nextInt();
+        for(int i=0; i<col; i++){
+            for(int j =0; j<=i; j++){
+                System.out.print("* ");
+            }
+
+            for(int j = 0; j<=(col-(i*2));j++){
+                System.out.print("  ");
+            }
+
+            for(int j =0; j<=i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -97,6 +117,7 @@ public class patterns {
         // invHaldPyramidNum(sc);
         // floydsTriangle(sc);
         // triangle01(sc);
+        butterfly(sc);
         sc.close();
     }
 }
