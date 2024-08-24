@@ -111,15 +111,15 @@ public class patterns {
 
         for (int i = row; i > 0; i--) {
 
-            for (int j = 0; j <= i-1; j++) {
+            for (int j = 0; j <= i - 1; j++) {
                 System.out.print("* ");
             }
 
-            for(int j=0; j<(row-i)*2; j++){
+            for (int j = 0; j < (row - i) * 2; j++) {
                 System.out.print("  ");
             }
 
-            for (int j = 0; j <= i-1; j++) {
+            for (int j = 0; j <= i - 1; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -129,23 +129,19 @@ public class patterns {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.println();
         hollowRect(sc);
-        
-        
+
         System.out.println();
         invRotHalfPyramid(sc);
-        
-        
+
         System.out.println();
         invHaldPyramidNum(sc);
-        
-        
+
         System.out.println();
         floydsTriangle(sc);
-        
-        
+
         System.out.println();
         triangle01(sc);
 
@@ -156,53 +152,51 @@ public class patterns {
     }
 }
 
+// patterns
 
+// Height- 5
+// Width- 5
+// * * * * *
+// * *
+// * *
+// * *
+// * * * * *
+// Enter Rows- 5
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
 
-    // patterns 
+// Enter number of rows: 5
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
 
-    // Height- 5
-    // Width- 5
-    // * * * * * 
-    // *       * 
-    // *       * 
-    // *       * 
-    // * * * * * 
-    // Enter Rows- 5
-    //         * 
-    //     * * 
-    //     * * * 
-    // * * * * 
-    // * * * * * 
+// Enter number of rows: 5
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
 
-    // Enter number of rows: 5
-    // 1 2 3 4 5 
-    // 1 2 3 4 
-    // 1 2 3 
-    // 1 2 
-    // 1 
+// Enter number of rows: 5
+// 1
+// 0 1
+// 0 1 0
+// 1 0 1 0
+// 1 0 1 0 1
 
-    // Enter number of rows: 5
-    // 1
-    // 2       3
-    // 4       5       6
-    // 7       8       9       10
-    // 11      12      13      14      15
-
-    // Enter number of rows: 5
-    // 1 
-    // 0 1 
-    // 0 1 0 
-    // 1 0 1 0 
-    // 1 0 1 0 1 
-
-    // Enter number of rows: 5
-    // *                 * 
-    // * *             * * 
-    // * * *         * * * 
-    // * * * *     * * * * 
-    // * * * * * * * * * * 
-    // * * * * * * * * * * 
-    // * * * *     * * * * 
-    // * * *         * * * 
-    // * *             * * 
-    // *                 * 
+// Enter number of rows: 5
+// * *
+// * * * *
+// * * * * * *
+// * * * * * * * *
+// * * * * * * * * * *
+// * * * * * * * * * *
+// * * * * * * * *
+// * * * * * *
+// * * * *
+// * *
