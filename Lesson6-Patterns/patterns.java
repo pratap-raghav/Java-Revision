@@ -129,12 +129,80 @@ public class patterns {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // hollowRect(sc);
-        // invRotHalfPyramid(sc);
-        // invHaldPyramidNum(sc);
-        // floydsTriangle(sc);
-        // triangle01(sc);
+        
+        System.out.println();
+        hollowRect(sc);
+        
+        
+        System.out.println();
+        invRotHalfPyramid(sc);
+        
+        
+        System.out.println();
+        invHaldPyramidNum(sc);
+        
+        
+        System.out.println();
+        floydsTriangle(sc);
+        
+        
+        System.out.println();
+        triangle01(sc);
+
+        System.out.println();
         butterfly(sc);
+
         sc.close();
     }
 }
+
+
+
+    // patterns 
+
+    // Height- 5
+    // Width- 5
+    // * * * * * 
+    // *       * 
+    // *       * 
+    // *       * 
+    // * * * * * 
+    // Enter Rows- 5
+    //         * 
+    //     * * 
+    //     * * * 
+    // * * * * 
+    // * * * * * 
+
+    // Enter number of rows: 5
+    // 1 2 3 4 5 
+    // 1 2 3 4 
+    // 1 2 3 
+    // 1 2 
+    // 1 
+
+    // Enter number of rows: 5
+    // 1
+    // 2       3
+    // 4       5       6
+    // 7       8       9       10
+    // 11      12      13      14      15
+
+    // Enter number of rows: 5
+    // 1 
+    // 0 1 
+    // 0 1 0 
+    // 1 0 1 0 
+    // 1 0 1 0 1 
+
+    // Enter number of rows: 5
+    // *                 * 
+    // * *             * * 
+    // * * *         * * * 
+    // * * * *     * * * * 
+    // * * * * * * * * * * 
+    // * * * * * * * * * * 
+    // * * * *     * * * * 
+    // * * *         * * * 
+    // * *             * * 
+    // *                 * 
