@@ -17,12 +17,13 @@ public class bubble {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter length- ");
         int n = sc.nextInt();
+
         if (n < 0) {
             System.out.println("Invalid Array Length...");
-        } 
-        else {
+        } else {
             int array[] = new int[n];
             System.out.println("Enter elements- ");
 
