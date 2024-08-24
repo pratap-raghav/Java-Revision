@@ -61,55 +61,72 @@ public class patterns {
         }
     }
 
-    static void floydsTriangle(Scanner sc){
+    static void floydsTriangle(Scanner sc) {
         System.out.print("Enter number of rows: ");
         int row = sc.nextInt();
         int count = 1;
         for (int i = 0; i < row; i++) {
 
             for (int j = 0; j <= i; j++) {
-                System.out.print(count+"\t");
+                System.out.print(count + "\t");
                 count++;
             }
             System.out.println();
         }
     }
 
-    static void triangle01(Scanner sc){
+    static void triangle01(Scanner sc) {
         System.out.print("Enter number of rows: ");
         int row = sc.nextInt();
         int count = 1;
         for (int i = 0; i < row; i++) {
 
             for (int j = 0; j <= i; j++) {
-                System.out.print(count%2+" ");
+                System.out.print(count % 2 + " ");
                 count++;
             }
             System.out.println();
         }
     }
-    
 
-    static void butterfly(Scanner sc){
-        System.out.print("Enter number of column: ");
-        int col = sc.nextInt();
-        for(int i=0; i<col; i++){
-            for(int j =0; j<=i; j++){
+    static void butterfly(Scanner sc) {
+        System.out.print("Enter number of rows: ");
+        int row = sc.nextInt();
+        for (int i = 0; i < row; i++) {
+
+            for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
 
-            for(int j = 0; j<=(col-(i*2));j++){
+            for (int j = (row - 2) * 2; j >= i * 2 - 1; j--) {
                 System.out.print("  ");
             }
 
-            for(int j =0; j<=i; j++){
+            for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
+
+        }
+
+        for (int i = row; i > 0; i--) {
+
+            for (int j = 0; j <= i-1; j++) {
+                System.out.print("* ");
+            }
+
+            for(int j=0; j<(row-i)*2; j++){
+                System.out.print("  ");
+            }
+
+            for (int j = 0; j <= i-1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+
         }
     }
 
-    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // hollowRect(sc);
