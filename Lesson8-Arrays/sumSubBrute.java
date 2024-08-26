@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class sumSubArray {
+public class sumSubBrute {
 
     static int subSum(int arr[]) {
         int sum = Integer.MIN_VALUE;
