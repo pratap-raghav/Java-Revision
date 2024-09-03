@@ -1,18 +1,22 @@
 import java.util.Scanner;
 
-public class bubble {
-    static int[] sort(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (arr[i] < arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+public class selection {
+    static int[] sort(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
                 }
             }
+
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
         }
         return arr;
-
     }
 
     public static void main(String[] args) {

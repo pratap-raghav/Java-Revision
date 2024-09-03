@@ -1,18 +1,20 @@
 import java.util.Scanner;
 
-public class bubble {
-    static int[] sort(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (arr[i] < arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-        return arr;
+public class insertion {
+    public static int[] sort(int[] a) {
+        int n = a.length;
 
+        for (int i = 1; i < n; i++) {
+            int key = a[i];
+            int j = i - 1;
+
+            while (j >= 0 && a[j] > key) {
+                a[j + 1] = a[j];
+                j = j - 1;
+            }
+            a[j + 1] = key;
+        }
+        return a;
     }
 
     public static void main(String[] args) {
