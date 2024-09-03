@@ -1,26 +1,28 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a = 0;
-        int b = 1;
-        if (n==1)
-            System.out.println(a);
-
-        else if(n==2)
-            System.out.println(a+" "+b);
-
-        else{
-            System.out.print(a+" "+b);
-            for(int i=2; i<n; i++){
-                int sum = a+b;
-                a=b;
-                b=sum;
-                System.out.print(" "+sum);
-            }
+        int even= 0;
+        int odd= 0;
+        int pos= 0;
+        int neg= 0;
+        for(int i = 0;i<n; i++){
+            int num = sc.nextInt();
+            if(num%2==0)
+                even++;
+            else
+                odd++;
+            if(num<0)
+                neg++;
+            else if(num>0)
+                pos++;
         }
+        System.out.println("Even: "+even);
+        System.out.println("Odd: "+odd);
+        System.out.println("Positive: "+pos);
+        System.out.println("Negative: "+neg);
+        
         sc.close();
     }
 }
@@ -106,4 +108,20 @@ public class Main {
 //         }
 //     }
 //     sc.close();
+// }
+
+// Even Numbers
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 2;i<=n; i=i+2){
+//             System.out.println(i);
+//         }
+//         if (n==1) {
+//             System.out.println(-1);
+//         }
+//         sc.close();
+//     }
 // }
