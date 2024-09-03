@@ -1,28 +1,19 @@
 import java.util.Scanner;
 public class Main {
+    static void isNumPrime(long num) {
+        for (long i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                System.out.println("NO");
+                return;
+            }
+        }
+        System.out.println("YES");
+        return;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int even= 0;
-        int odd= 0;
-        int pos= 0;
-        int neg= 0;
-        for(int i = 0;i<n; i++){
-            int num = sc.nextInt();
-            if(num%2==0)
-                even++;
-            else
-                odd++;
-            if(num<0)
-                neg++;
-            else if(num>0)
-                pos++;
-        }
-        System.out.println("Even: "+even);
-        System.out.println("Odd: "+odd);
-        System.out.println("Positive: "+pos);
-        System.out.println("Negative: "+neg);
-        
+        long num = sc.nextInt();
+        isNumPrime(num);
         sc.close();
     }
 }
@@ -110,7 +101,7 @@ public class Main {
 //     sc.close();
 // }
 
-// Even Numbers
+//B - Even Numbers
 // import java.util.Scanner;
 // public class Main {
 //     public static void main(String[] args) {
@@ -122,6 +113,70 @@ public class Main {
 //         if (n==1) {
 //             System.out.println(-1);
 //         }
+//         sc.close();
+//     }
+// }
+
+// C - Even, Odd, Positive and Negative
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int even= 0;
+//         int odd= 0;
+//         int pos= 0;
+//         int neg= 0;
+//         for(int i = 0;i<n; i++){
+//             int num = sc.nextInt();
+//             if(num%2==0)
+//                 even++;
+//             else
+//                 odd++;
+//             if(num<0)
+//                 neg++;
+//             else if(num>0)
+//                 pos++;
+//         }
+//         System.out.println("Even: "+even);
+//         System.out.println("Odd: "+odd);
+//         System.out.println("Positive: "+pos);
+//         System.out.println("Negative: "+neg);
+        
+//         sc.close();
+//     }
+// }
+
+// F - Multiplication table
+// import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i = 1;i<=12; i++){
+//             System.out.println(n+" * "+i+" = "+n*i);
+//         }
+//         sc.close();
+//     }
+// }
+
+// H - One Prime
+// import java.util.Scanner;
+// public class Main {
+//     static void isNumPrime(long num) {
+//         for (long i = 2; i <= Math.sqrt(num); i++) {
+//             if (num % i == 0) {
+//                 System.out.println("NO");
+//                 return;
+//             }
+//         }
+//         System.out.println("YES");
+//         return;
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         long num = sc.nextInt();
+//         isNumPrime(num);
 //         sc.close();
 //     }
 // }
