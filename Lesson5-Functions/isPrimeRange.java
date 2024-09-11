@@ -11,17 +11,15 @@ public class isPrimeRange {
     }
 
     static void primeRange(int num) {
-        for (int i = 1; i <= num; i++) {
+        for (int i = 2; i <= num; i++) {
             if (isNumPrime(i) == true)
-                System.out.println(i);
+                System.out.print(i+" ");
         }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Nubmer- ");
         int num = sc.nextInt();
-        System.out.println("Numbers are-");
         primeRange(num);
         sc.close();
     }

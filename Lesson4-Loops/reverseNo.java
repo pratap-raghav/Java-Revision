@@ -11,7 +11,7 @@ public class reverseNo{
             
             num/=10;
         }
-        System.out.println("The reverse: "+temp);
+        System.out.println(temp);
         
         sc.close();
     }
