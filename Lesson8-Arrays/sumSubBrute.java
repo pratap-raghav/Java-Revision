@@ -41,7 +41,7 @@ public class sumSubBrute {
                 System.out.print(array[i] + " ");
             }
             System.out.println();
-            System.out.println("Max sum - "+subSum(array));
+            System.out.println("Max sum- "+subSum(array));
             
 
         }

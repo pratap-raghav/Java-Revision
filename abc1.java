@@ -1,20 +1,28 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class abc1 {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long m = Long.MAX_VALUE;
         int n = sc.nextInt();
-        int pos = 0;
-        for(int i=0; i<n; i++){
-            long v = sc.nextLong();
-            if(m>v){
-                m = v;
-                pos = i+1;
-            }
-
+        int arr[] = new int[n];
+        for(int i=0; i<n;i++){
+            arr[i]=sc.nextInt();
         }
-        System.out.println(m+" "+pos);
+        int start = 0, end = n-1;
+        int flag = 0;
+        while(start<=end){
+            if(arr[start]!=arr[end]){
+                flag = 1;
+                break;
+            }
+            start++;
+            end--;
+        }
+        if(flag==1)
+            System.out.print("NO");
+        else
+         System.out.print("YES");
         sc.close();
     }
 }
