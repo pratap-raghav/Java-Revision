@@ -12,7 +12,7 @@ public class abc1 {
             for(int i=0; i<n; i++){
                 array[i]=sc.nextLong();
             }
-            long sum = Long.MAX_VALUE;
+            long sum = Long.MAX_VALUE ;
             for(int i=0; i<n; i++){
                 for(int j=i+1; j<n; j++){
                     long temp = array[i]+array[j]+j-i;
