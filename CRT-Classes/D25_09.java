@@ -1,4 +1,4 @@
-public class test1 {
+public class D25_09 {
     public static void main(String[] args) {
         int arr[] = {5,1,3,4,2,6};
         int n=arr.length;
