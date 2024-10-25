@@ -162,9 +162,9 @@ public class patterns {
 //          * * * * * 
 //          Enter Rows- 5
 //                  * 
-//              * * 
+//                * * 
 //              * * * 
-//          * * * * 
+//            * * * * 
 //          * * * * * 
 
 //          Enter number of rows: 5
